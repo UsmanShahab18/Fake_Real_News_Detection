@@ -13,7 +13,7 @@ app = Flask(__name__)
 try:
     nltk.data.find('corpora/stopwords')
     print("NLTK stopwords already downloaded.")
-except (nltk.downloader.DownloadError, LookupError):
+except LookupError:
     print("NLTK stopwords not found. Downloading...")
     nltk.download('stopwords')
 
