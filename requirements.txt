@@ -1,8 +1,2 @@
-pandas
-numpy
-scikit-learn
-nltk
-Flask
-joblib
-seaborn
-matplotlib
+gunicorn==23.0.0
+packaging==25.0
